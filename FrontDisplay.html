@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Front Display — CCC Divine Intellect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background video and overlay -->
+  <video id="bgVideo" class="bg-video" autoplay muted loop playsinline>
+    <source src="assets/background.mp4" type="video/mp4">
+    <!-- fallback text if video not supported -->
+  </video>
+  <div class="bg-overlay"></div>
+
+  <!-- Hidden ambient audio; controlled via JS -->
+  <audio id="ambientAudio" loop src="assets/ambient.mp3"></audio>
+
+  <!-- Top-right controls -->
+  <div class="top-controls">
+    <button id="soundToggle" class="btn-ghost sound-off" aria-pressed="false" title="Toggle sound">🔈</button>
+  </div>
+
+  <!-- Main content container -->
+  <main class="center-wrap">
+      <!-- Title and description (updated) -->
+      <h1 class="main-title">Niche <span class="accent-green">Lab</span></h1>
+
+      <div class="description">
+        <p>They say in the Beginning there was keyframes, and the keyframes bore fruit.</p>
+      </div>
+
+    <!-- Compass navigation -->
+    <div class="compass-wrap" id="compass" role="navigation" aria-label="Compass navigation">
+      <div class="compass-center" aria-hidden="true">
+        <div class="compass-circle"></div>
+      </div>
+
+      <a class="dir dir-n" data-dir="north" href="#" aria-label="North" data-letter="N">N</a>
+      <a class="dir dir-e" data-dir="east" href="#" aria-label="East" data-letter="E">E</a>
+      <a class="dir dir-s" data-dir="south" href="contact.html" aria-label="South" data-letter="S">S</a>
+      <a class="dir dir-w" data-dir="west" href="#" aria-label="West" data-letter="W">W</a>
+
+      <!-- thin arms -->
+      <span class="arm arm-n"></span>
+      <span class="arm arm-e"></span>
+      <span class="arm arm-s"></span>
+      <span class="arm arm-w"></span>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">@ NicheLab Inc. | <a href="https://discord.gg/nac8qj5Cuc" target="_blank">JOIN DISCORD</a></footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
